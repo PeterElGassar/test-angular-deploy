@@ -1,0 +1,33 @@
+//////////////////////// dynamic css classes ////////////////////////////
+@for $i from 1 through 5 {
+    .trim-lines-#{$i} {
+        @include trim($i);
+    }
+}
+
+// @for $i from 1 through 50 {
+//     .border-radius-#{$i} {
+//         border-radius: $i * 1px;
+//     }
+// }
+
+
+// @for $i from 1 through 100 {
+//     .mb-#{$i} {
+//           margin-bottom: rem($i * 1px, 16px) !important;
+//     }
+// }
+
+// @for $i from 1 through 100 {
+//     .mt-#{$i} {
+//             margin-top: rem($i * 1px, 16px)  !important;
+//     }
+// }
+
+// @for $i from 1 through 100 {
+//     .mr-#{$i} {
+//         margin-inline-end: rem($i * 1px, 16px) !important;
+//     }
+// }
+
+//////////////////////// end dynamic css classes ////////////////////////////

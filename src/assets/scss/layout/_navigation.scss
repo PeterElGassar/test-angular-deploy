@@ -1,0 +1,10 @@
+nav{
+    .nav-menu{
+        list-style: none;
+        gap: rem(30);
+        .nav-menu-item{
+            font-family: $font-medium;
+            font-size: rem(18);
+        }
+    }
+}

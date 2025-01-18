@@ -1,0 +1,21 @@
+<div class="swiper-container" >
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let slid of sliders">
+            <img *ngIf="slid.imgPath" [src]="slid.imgPath" alt="slid img">
+            <video *ngIf="slid.vedioPath" autoplay muted playsinline loop>
+                <source [src]="slid.vedioPath" type="video/mp4">
+            </video>
+            <div class="banner-text-wrapper">
+                <h1>{{slid.title}}</h1>
+                <h4>{{slid.slogan}}</h4>
+                <p>{{slid.pragraph}}</p>
+                <a class="btn readmore-btn" href="#">Read more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination " appSwiperPaginationStyle>
+
+    </div>
+</div>

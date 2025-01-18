@@ -1,0 +1,16 @@
+/* bootstrap shared components import
+================================ */
+
+@import '../../common/main-bootstrap';
+
+/*  common file import
+================================ */
+
+@import '../../common/main';
+
+/* homepage components import
+================================ */
+
+@import '../../vendors/animate.css/animate';
+
+@import '../home/components/announcements';

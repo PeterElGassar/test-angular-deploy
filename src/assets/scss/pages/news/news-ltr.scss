@@ -1,0 +1,15 @@
+/*  common file import
+================================ */
+
+@import '../../common/shared';
+
+/*  ltr file import
+================================ */
+
+@import '../../utils/_ltr-support.scss';
+
+
+/* news components import
+================================ */
+
+@import '../news/news';

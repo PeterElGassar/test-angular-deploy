@@ -1,0 +1,66 @@
+/*  main config
+================================ */
+
+$projectName: 'GAFI';
+$assets-path: '/assets';
+
+/* icon config
+================================ */
+
+$icomoon-font-family: 'gafi-icons';
+$icomoon-font-path: '#{$assets-path}/fonts/icons/gafi-icons'; // create folder under fonts with name of project-icons
+
+/*  Bootstrap breakpoints  config
+================================ */
+/**357*/
+$br-xs: 0;
+$br-sm: 576px;
+$br-md: 768px;
+$br-lg: 992px;
+$br-xl: 1200px;
+$br-xxl: 1400px;
+$br-xxxl: 1600px;
+$br-xxxxl: 1800px;
+
+/*  Bootstrap container width  config
+================================ */
+
+$cw-sm: 540px;
+$cw-md: 720px;
+$cw-lg: 960px;
+$cw-xl: 1134px;
+$cw-xxl: 1250px;
+$cw-xxxl: 1578px;
+$cw-xxxxl: 1760px;
+
+
+/*  Bootstrap grid  config
+================================ */
+
+$bs-grid-columns: 12;
+$bs-grid-gutter-width: 20px;
+$bs-form-grid-gutter-width: 20px;
+
+/*  link config
+================================ */
+
+$link-decoration: none;
+$link-hover-decoration: none;
+$emphasized-link-hover-darken-percentage: 15%;
+
+/*  Bootstrap feature option 
+================================ */
+
+$enable-caret: true;
+$enable-rounded: false;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: true;
+$enable-prefers-reduced-motion-media-query: true;
+$enable-hover-media-query: false; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes: true;
+$enable-pointer-cursor-for-buttons: true;
+$enable-print-styles: true;
+$enable-responsive-font-sizes: false;
+$enable-validation-icons: false;
+$enable-deprecation-messages: true;

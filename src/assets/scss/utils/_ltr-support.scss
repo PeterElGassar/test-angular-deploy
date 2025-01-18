@@ -1,0 +1,50 @@
+//English
+$ltr-fonts: Montserrat-Regular 'Montserrat-Regular' 400, Montserrat-Medium 'Montserrat-Medium' 500, Montserrat-Light 'Montserrat-Light' 300,
+Montserrat-SemiBold 'Montserrat-SemiBold' 600, Montserrat-Bold 'Montserrat-Bold' 700 , Montserrat-ExtraBold 'Montserrat-ExtraBold' 800;
+$ltr-fonts-ext: woff woff2; 
+$ltr-fonts-folder: 'app-fonts/Montserrat';
+$ltr-font-family-base: 'Montserrat-Regular'; // name of default body font and folder font name
+
+
+
+/*  ltr variable support
+================================ */
+
+$def-float: left;
+$opp-float: right;
+$def-direction: ltr;
+$opp-direction: rtl;
+$body-text-align:$def-float;
+$def-scale: 1;
+$opp-scale: -1;
+$breadcrumb-rotate-angel: -90deg;
+$background-angel: 77deg;
+$rotate-angel: 0deg;
+
+/*  ltr font support
+================================ */
+
+@include font-face($ltr-fonts, $ltr-fonts-folder, normal, normal, $ltr-fonts-ext);
+:root{
+    --font-light: 'Montserrat-Light', sans-serif;
+    --font-regular: 'Montserrat-Regular', sans-serif; 
+    --font-medium: 'Montserrat-Medium', sans-serif;
+    --font-semi:'Montserrat-SemiBold', sans-serif;
+    --font-bold: 'Montserrat-Bold', sans-serif;
+    --font-extra:'Montserrat-ExtraBold', sans-serif;
+    --font-size-base: 14px;
+}
+
+  @media (min-width: 1600px) {
+    :root {
+      --font-size-base: 16px;
+    }
+  }
+
+$font-family-base:  var(--font-regular);
+$font-medium: var(--font-medium);
+$font-bold: var(--font-bold);
+$font-light: var(--font-light);
+$font-regular: var(--font-regular);
+$font-extra: var(--font-extra);
+$font-semi: var(--font-semi);

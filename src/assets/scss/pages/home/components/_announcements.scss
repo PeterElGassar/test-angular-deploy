@@ -1,0 +1,228 @@
+.swiper-container {
+    width: 100%;
+    height: calc(95vh - 85px);
+    position: relative;
+    display: inline-block;
+
+    .swiper-slide {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        /*dark layer on top of banner*/
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            pointer-events: none;
+        }
+
+        .banner-text-wrapper {
+            position: absolute;
+            bottom: 10%;
+            color: #FFF;
+            margin: 2rem;
+
+            h1 {
+                font-size: rem(30);
+                margin-bottom: rem(15);
+                font-family: $font-bold;
+
+            }
+
+            h4 {
+                font-size: rem(24);
+                margin-bottom: rem(15);
+            }
+
+            p {
+                font-size: rem(12);
+                margin-bottom: rem(30);
+            }
+
+            a.readmore-btn {
+                width: 280px;
+                height: 42px;
+                background: var(--dark-blue);
+                border-radius: 24px;
+                text-align: center;
+                margin: auto;
+                color: var(--white);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: $font-medium;
+                text-transform: uppercase
+            }
+        }
+
+    }
+
+}
+
+
+
+.swiper-pagination.pagination-mobile {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    justify-items: center;
+    gap: 0px;
+    padding: 10px 16px;
+    position: absolute;
+
+    // override Swiper style
+    .swiper-pagination-bullet {
+        min-width: 60px;
+        height: 4px;
+        border-radius: 0;
+        background: #8E99A9;
+        background: var(--naval-blue);
+        transition: all 0.3s;
+    }
+
+    .swiper-pagination-bullet-active {
+        background: var(--ganon-blue);
+    }
+}
+
+
+.swiper-pagination.pagination-desktop {
+    width: 117px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, .5);
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
+    position: relative;
+    transform: rotate(90deg);
+    left: -50px;
+    top: -50%;
+
+    &::before {
+        content: "switch sliders";
+        position: absolute;
+        color: #FFF;
+        font-size: 10px;
+        width: 100%;
+        left: 0;
+        top: 35%;
+    }
+
+
+    
+    /* Position bullets */
+    .swiper-pagination-bullet {
+        width: 11px;
+        height: 11px;
+        background-color: #C4C4C4;
+        border-radius: 50%;
+        position: absolute;
+        opacity: 1;
+        min-width: 0;
+        transition: all 500ms;
+    }
+
+    .swiper-pagination-bullet-active {
+        width: 16px;
+        height: 16px;
+        background-color: #1753C8;
+        border: 1.5px solid #FFF;
+        transform: translateY(-3px);
+        transform: translate(-3px, -4px);
+    }
+
+    .swiper-pagination-bullet:nth-child(1) {
+        top: 12%;
+        left: 11%;
+    }
+
+    .swiper-pagination-bullet:nth-child(2) {
+        top: -3%;
+        left: 25%;
+    }
+
+    .swiper-pagination-bullet:nth-child(3) {
+        top: -8%;
+        left: 40%;
+    }
+
+    .swiper-pagination-bullet:nth-child(4) {
+        top: -6%;
+        left: 57%;
+    }
+
+    .swiper-pagination-bullet:nth-child(5) {
+        top: 7%;
+        left: 72%;
+    }
+
+    .swiper-pagination-bullet:nth-child(6) {
+        top: 18%;
+        left: 81%
+    }
+
+}
+
+// ******************media query**************
+@include media-breakpoint-up(sm) {
+    .swiper-container {
+        .swiper-slide {
+            .banner-text-wrapper {
+
+                a.readmore-btn {
+                    margin: unset;
+                }
+            }
+        }
+    }
+
+
+
+}
+
+@include media-breakpoint-up(md) {
+    // hide mobile 
+    // show disktop
+
+    .swiper-container {
+        .swiper-slide {
+            .banner-text-wrapper {
+                left: 10%;
+                h1 {
+                    font-size: rem(60);
+                }
+    
+                h4 {
+                    font-size: rem(30);
+                }
+    
+                p {
+                    font-size: rem(16);
+                }
+    
+                a.readmore-btn {
+
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+    
+        }
+    }
+}
+
+
+@include media-breakpoint-up(lg) {
+
+}
