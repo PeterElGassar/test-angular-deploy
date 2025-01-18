@@ -1,6 +1,6 @@
 .swiper-container {
     width: 100%;
-    height: calc(95vh - 85px);
+    height: calc(85vh - 85px);
     position: relative;
     display: inline-block;
 
@@ -15,6 +15,8 @@
 
         video {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         /*dark layer on top of banner*/
@@ -73,7 +75,6 @@
 }
 
 
-
 .swiper-pagination.pagination-mobile {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
@@ -119,8 +120,6 @@
         top: 35%;
     }
 
-
-    
     /* Position bullets */
     .swiper-pagination-bullet {
         width: 11px;
@@ -186,43 +185,37 @@
             }
         }
     }
-
-
-
 }
 
 @include media-breakpoint-up(md) {
-    // hide mobile 
-    // show disktop
 
     .swiper-container {
         .swiper-slide {
             .banner-text-wrapper {
                 left: 10%;
+
                 h1 {
                     font-size: rem(60);
                 }
-    
+
                 h4 {
                     font-size: rem(30);
                 }
-    
+
                 p {
                     font-size: rem(16);
                 }
-    
+
                 a.readmore-btn {
 
                     justify-content: center;
                     align-items: center;
                 }
             }
-    
+
         }
     }
 }
 
 
-@include media-breakpoint-up(lg) {
-
-}
+@include media-breakpoint-up(lg) {}
