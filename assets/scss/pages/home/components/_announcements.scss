@@ -70,6 +70,20 @@
             }
         }
 
+        .play-video{
+            font-size: rem(16);
+            color: var(--white);
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            display: flex;
+            align-items: center;
+            margin-bottom: rem(15);
+            img{
+                width: 26px;
+                margin: 8px;
+            }
+           
+        }
     }
 
 }
@@ -173,12 +187,11 @@
 
 }
 
-// ******************media query**************
+// ===========MEDIA QUERY============
 @include media-breakpoint-up(sm) {
     .swiper-container {
         .swiper-slide {
             .banner-text-wrapper {
-
                 a.readmore-btn {
                     margin: unset;
                 }
@@ -207,7 +220,6 @@
                 }
 
                 a.readmore-btn {
-
                     justify-content: center;
                     align-items: center;
                 }
@@ -216,6 +228,3 @@
         }
     }
 }
-
-
-@include media-breakpoint-up(lg) {}
