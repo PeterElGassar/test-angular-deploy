@@ -1,0 +1,39 @@
+/*  Bootstrap Grid & container & Grid columns
+================================ */
+
+$grid-breakpoints: (
+    xs: $br-xs,
+    sm: $br-sm,
+    md: $br-md,
+    lg: $br-lg,
+    xl: $br-xl,
+    xxl: $br-xxl,
+    xxxl: $br-xxxl,
+    xxxxl: $br-xxxxl,
+
+);
+// Grid containers
+$container-max-widths: (
+    sm: $cw-sm,
+    md: $cw-md,
+    lg: $cw-lg,
+    xl: $cw-xl,
+    xxl: $cw-xxl,
+    xxxl: $cw-xxxl,
+    xxxxl: $cw-xxxxl
+);
+// Grid columns
+$grid-columns: $bs-grid-columns !default;
+$grid-gutter-width: $bs-grid-gutter-width !default;
+$form-grid-gutter-width: $bs-form-grid-gutter-width !default;
+
+//
+$enable-rounded: true;
+//font sizes
+// Default base font size
+$base-font-size: 14px;
+
+// Base sizes for different breakpoints
+$base-font-size-sm: 14px;
+$base-font-size-md: 15px;
+$base-font-size-lg: 16px;

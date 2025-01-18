@@ -1,0 +1,123 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?rm6fx8');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?rm6fx8#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?rm6fx8') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?rm6fx8') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?rm6fx8##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-previous {
+  &:before {
+    content: $icon-previous; 
+  }
+}
+.icon-menu {
+  &:before {
+    content: $icon-menu; 
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook; 
+  }
+}
+.icon-arrow-left-circle {
+  &:before {
+    content: $icon-arrow-left-circle; 
+  }
+}
+.icon-arrow-right-circle {
+  &:before {
+    content: $icon-arrow-right-circle; 
+  }
+}
+.icon-arrow-right-short {
+  &:before {
+    content: $icon-arrow-right-short; 
+  }
+}
+.icon-arrow-left-short {
+  &:before {
+    content: $icon-arrow-left-short; 
+  }
+}
+.icon-arrow-right-long {
+  &:before {
+    content: $icon-arrow-right-long; 
+  }
+}
+.icon-font-size .path1 {
+  &:before {
+    content: $icon-font-size-path1;  
+    color: rgb(26, 27, 38);
+  }
+}
+.icon-font-size .path2 {
+  &:before {
+    content: $icon-font-size-path2;  
+    margin-left: -1.3916015625em;  
+    color: rgb(153, 153, 153);
+  }
+}
+.icon-contrast-circle-symbol {
+  &:before {
+    content: $icon-contrast-circle-symbol; 
+  }
+}
+.icon-magnifying-glass {
+  &:before {
+    content: $icon-magnifying-glass; 
+  }
+}
+.icon-investment {
+  &:before {
+    content: $icon-investment; 
+  }
+}
+.icon-save-money {
+  &:before {
+    content: $icon-save-money; 
+  }
+}
+.icon-flight {
+  &:before {
+    content: $icon-flight; 
+  }
+}
+.icon-pc {
+  &:before {
+    content: $icon-pc; 
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter; 
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin; 
+  }
+}
+

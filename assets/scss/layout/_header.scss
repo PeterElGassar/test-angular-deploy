@@ -1,0 +1,36 @@
+.header-wrap {
+    padding: rem(12) 0;
+    .header-actions {
+      .language-switcher {
+        margin-#{$opp-float}: rem(16);
+        display: flex;
+        gap: 0.5rem;
+        .language-btn {
+          font-size: rem(16);
+        }
+      }
+      .darkmode-switcher {
+        margin-#{$opp-float}: rem(26);
+        font-size: rem(27)
+      }
+      .font-resizer {
+        margin-#{$opp-float}: rem(26);
+        font-size: rem(24)
+      }
+      .search-btn{
+        font-size: rem(25)
+      }
+    }
+    .logo-nav-wrap {
+      gap: rem(74);
+      nav {
+        .nav-menu {
+          .nav-menu-item {
+            a {
+              color: var(--coarse-wool);
+            }
+          }
+        }
+      }
+    }
+}

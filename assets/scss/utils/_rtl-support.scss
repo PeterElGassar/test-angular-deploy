@@ -1,0 +1,49 @@
+//Arabic
+$rtl-fonts: HelveticaNeueLT-Arabic-Regular 'HelveticaNeueLT-Arabic-Regular' 400, HelveticaNeueLT-Arabic-Bold 'HelveticaNeueLT-Arabic-Bold' 700;
+$rtl-fonts-ext: woff woff2;
+$rtl-fonts-folder: 'app-fonts/HelveticaNeueLT';
+$rtl-font-family-base: 'HelveticaNeueLT-Arabic-Regular';
+
+/*  rtl variable support
+================================ */
+$dir : rtl;
+$def-float: right;
+$opp-float: left;
+$def-direction: rtl;
+$opp-direction: ltr;
+$body-text-align: $def-float;
+$def-scale: -1;
+$opp-scale: 1;
+$breadcrumb-rotate-angel: 90deg;
+$background-angel: 283deg;
+$rotate-angel: 180deg;
+
+
+/*  rtl font support
+================================ */
+@include font-face($rtl-fonts, $rtl-fonts-folder, normal, normal, $rtl-fonts-ext);
+
+:root{
+    --font-family-base: 'HelveticaNeueLT-Arabic-Regular', sans-serif;
+    --font-light: 'HelveticaNeueLT-Arabic-Regular', sans-serif;
+    --font-regular: 'HelveticaNeueLT-Arabic-Regular', sans-serif;
+    --font-medium: 'HelveticaNeueLT-Arabic-Bold', sans-serif;
+    --font-semi: 'HelveticaNeueLT-Arabic-Bold', sans-serif;
+    --font-bold: 'HelveticaNeueLT-Arabic-Bold', sans-serif;
+    --font-extra: 'HelveticaNeueLT-Arabic-Bold', sans-serif;
+    --font-size-base: 14px;
+}
+
+  @media (min-width: 1600px) {
+    :root {
+      --font-size-base: 16px;
+    }
+  }
+
+$font-family-base:  var(--font-regular);
+$font-medium: var(--font-medium);
+$font-semi: var(--font-semi);
+$font-bold: var(--font-bold);
+$font-light: var(--font-light);
+$font-regular: var(--font-regular);
+$font-extra: var(--font-extra);
